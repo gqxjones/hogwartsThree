@@ -1,0 +1,60 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "AssertionError: 实际结果0.020000000000000004与预期结果0.02不一致\nassert 0.020000000000000004 == 0.02",
+      "children" : [ {
+        "name" : "test_mulFloat[0.1-0.2-0.02]",
+        "uid" : "e218451a662cdc01",
+        "parentUid" : "b76dec296901ccedf61e52d7b73b97fc",
+        "status" : "failed",
+        "time" : {
+          "start" : 1606204073341,
+          "stop" : 1606204073342,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "0.1", "0.2", "0.02" ]
+      } ],
+      "uid" : "b76dec296901ccedf61e52d7b73b97fc"
+    }, {
+      "name" : "AssertionError: 实际结果0.555与预期结果0.56不一致\nassert 0.555 == 0.56",
+      "children" : [ {
+        "name" : "test_mulFloat[0.2775-2-0.56]",
+        "uid" : "59b3f67db9db0790",
+        "parentUid" : "dd8473e7a7050f4366155b293db01a01",
+        "status" : "failed",
+        "time" : {
+          "start" : 1606204073442,
+          "stop" : 1606204073442,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "0.2775", "2", "0.56" ]
+      } ],
+      "uid" : "dd8473e7a7050f4366155b293db01a01"
+    }, {
+      "name" : "AssertionError: 实际结果0.10000000000000003与预期结果0.1不一致\nassert 0.10000000000000003 == 0.1",
+      "children" : [ {
+        "name" : "test_subFloat[0.4-0.3-0.1]",
+        "uid" : "d03238e09f9c401f",
+        "parentUid" : "9893fb807f3d872fd931ce20cb047c66",
+        "status" : "failed",
+        "time" : {
+          "start" : 1606204073498,
+          "stop" : 1606204073498,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "0.4", "0.3", "0.1" ]
+      } ],
+      "uid" : "9893fb807f3d872fd931ce20cb047c66"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ]
+}

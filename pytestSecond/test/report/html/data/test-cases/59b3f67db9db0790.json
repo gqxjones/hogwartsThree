@@ -1,0 +1,131 @@
+{
+  "uid" : "59b3f67db9db0790",
+  "name" : "test_mulFloat[0.2775-2-0.56]",
+  "fullName" : "testCalculator.TestCalculator#test_mulFloat",
+  "historyId" : "d1f67df0010d4dae6b2c74a84c516487",
+  "time" : {
+    "start" : 1606204073442,
+    "stop" : 1606204073442,
+    "duration" : 0
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError: 实际结果0.555与预期结果0.56不一致\nassert 0.555 == 0.56",
+  "statusTrace" : "self = <pytestSecond.test.testCalculator.TestCalculator object at 0x03B53280>, a = 0.2775, b = 2, expected = 0.56\n\n    @pytest.mark.run(order=3)\n    @pytest.mark.parametrize(['a', 'b', 'expected'], getData(\"mul\", \"floatDatas\"))\n    def test_mulFloat(self, a, b, expected):\n        result = self.cal.mul(a, b)\n>       assert result == expected, f'实际结果{result}与预期结果{expected}不一致'\nE       AssertionError: 实际结果0.555与预期结果0.56不一致\nE       assert 0.555 == 0.56\n\ntestCalculator.py:88: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "updown",
+    "time" : {
+      "start" : 1606204073441,
+      "stop" : 1606204073442,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1606204073208,
+      "stop" : 1606204073208,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "updown::0",
+    "time" : {
+      "start" : 1606204073449,
+      "stop" : 1606204073449,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1606204073511,
+      "stop" : 1606204073511,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "run(order=3)"
+  }, {
+    "name" : "suite",
+    "value" : "testCalculator"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCalculator"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-103B3LA"
+  }, {
+    "name" : "thread",
+    "value" : "47728-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testCalculator"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "a",
+    "value" : "0.2775"
+  }, {
+    "name" : "b",
+    "value" : "2"
+  }, {
+    "name" : "expected",
+    "value" : "0.56"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ "run(order=3)" ]
+  },
+  "source" : "59b3f67db9db0790.json",
+  "parameterValues" : [ "0.2775", "2", "0.56" ]
+}
