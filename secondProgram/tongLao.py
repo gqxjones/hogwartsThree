@@ -14,3 +14,54 @@ fight_zms方法（天山折梅手），调用天山折梅手方法会将自己�
 每次调用都会打印“罪过罪过”
 加入模块化改造
 '''
+
+
+class TongLao:
+    def __init__(self, hp, power):
+        self.hp = hp
+        self.power = power
+
+    def see_people(self, name):
+        if name == 'WYZ' or name == '无崖子':
+            print('师弟！！！！')
+        elif name == '李秋水':
+            print('呸，贱人')
+        elif name == '丁春秋':
+            print('叛徒！我杀了你')
+        else:
+            print('我认不到你，你奏凯！')
+
+    def fight_zms(self, enemy_hp, enemy_power):
+        self.power *= 10
+        self.hp /= 2
+        print(f"现在攻击力是{self.power}")
+        print(f"现在血量是{self.hp}")
+        self.hp -= enemy_power
+        enemy_hp -= self.power
+        if self.hp > enemy_hp:
+            print("瓜娃子，你输了")
+        elif self.hp == enemy_hp:
+            print("你凶！我们平手")
+        else:
+            print("你凶！我攻击力翻倍都没干赢你")
+
+
+class XuZhu(TongLao):
+    def __init__(self, hp, power):
+        super().__init__(hp, power)
+
+    def read(self):
+        print("罪过罪过")
+
+
+if __name__ == '__main__':
+    tl = TongLao(1000, 20)
+    tl.see_people("WYZ")
+    tl.see_people("无崖子")
+    tl.see_people("李秋水")
+    tl.see_people("丁春秋")
+    tl.see_people("小米虫")
+    tl.fight_zms(500, 200)
+    xz = XuZhu(888, 50)
+    xz.read()
+    xz.fight_zms(500, 50)
